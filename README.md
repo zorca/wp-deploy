@@ -1,4 +1,4 @@
-# Конфигурация Deployer для Bedrock
+# Deployer config for Bedrock
 
 У вас должны быть установлены Deployer и rsync.
 
