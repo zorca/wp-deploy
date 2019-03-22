@@ -1,0 +1,11 @@
+example.com:
+    repository: git@github.com:roots/bedrock.git
+    deploy_path: ~/webapps/example.com
+    hostname:  1.1.1.1
+    user: user
+    identityFile: null
+    forwardAgent: true
+    multiplexing: false
+    sshOptions:
+        UserKnownHostsFile: /dev/null
+        StrictHostKeyChecking: no
