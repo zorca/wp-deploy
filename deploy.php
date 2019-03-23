@@ -32,6 +32,16 @@ task('test', function () {
 });
 
 /**
+ * Push database task
+ */
+task('push:db', function () {
+    runLocally('wp db export --add-drop-table current.sql');
+    upload('current.sql', '{{release_path}}/current.sql');
+    run('cd {{release_path}} && wp db import current.sql');
+    run('cd {{release_path}} && wp search-replace "//'.get('domain_local').'" "//'.get('domain_remote').'"');
+});
+
+/**
  * Main task
  */
 desc('Deploy your project');

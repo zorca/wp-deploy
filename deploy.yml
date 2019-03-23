@@ -1,4 +1,6 @@
 example.com:
+    domain_local: example.test
+    domain_remote: example.com
     repository: git@github.com:roots/bedrock.git
     deploy_path: ~/webapps/example.com
     hostname:  1.1.1.1
