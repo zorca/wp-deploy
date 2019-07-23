@@ -1,13 +1,11 @@
 # Deployer config for Bedrock
 
-У вас должны быть установлены Deployer и rsync.
+You must have Deployer and rsync installed.
 
-Скопируйте файлы deploy.php и deploy.yml из репозитория в корень своего проекта Bedrock.
+Copy the files deploy.php and deploy.yml from repository into the root of your Bedrock project.
 
-После этого заполните конфигурационный файл deploy.yml своими данными.
+Then input your data into the configuration file deploy.yml
 
-Проверьте подключение к своему серверу командой: dep test.
+Check the connection to your server using the command: dep test.
 
-Задеплойте кодовую базу своего приложения командой: dep deploy.
-
-Деплой необходимо осуществлять под пользователем веб-сервера, на которой осуществляется деплой.
+Deploy the code base of your app using the command: dep deploy.
